@@ -51,7 +51,7 @@ with col[1]:
     st.write("✉️ ", mail)
     if st.button("📤 Contacter moi"):
         # affiche_formulaire()
-        st.write(mail)
+        st.write("")
 
 st.write("\n\n")
 st.markdown(
