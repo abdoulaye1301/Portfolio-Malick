@@ -49,9 +49,10 @@ with col[1]:
     st.write(description)
     st.write("☎️ ", tel)
     st.write("✉️ ", mail)
-    if st.button("📤 Contacter moi"):
-        # affiche_formulaire()
-        st.write("")
+
+    # if st.button("📤 Contacter moi"):
+    # affiche_formulaire()
+    # st.write("")
 
 st.write("\n\n")
 st.markdown(
