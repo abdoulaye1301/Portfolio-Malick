@@ -44,6 +44,12 @@ st.write(
 )
 st.write(
     """
+    - Du Décembre 2023 au Mai 2024.|. Analyste de données chez ID
+    GLOBAL BUSNESS à Keur Massar
+    """
+)
+st.write(
+    """
     - Du 15 mai au 14 Juin 2023 : Contrôleur lors du 5ème Grand Recensement de la Population et de l’Habitat (RGPH-5)
     \n\tMissions ou les tâches réalisées\n
     - Sensibiliser les autorités et les populations
@@ -53,5 +59,18 @@ st.write(
     - Assurer le suivi de la concrétisation des DR fait par les AR
     - Contrôler la qualité des données collectées
     - Dresser un bilan de la collecte (tableau récapitulatif, etc ) dans ma zone de contrôle
+    """
+)
+st.write(
+    """
+    - Du 03/08 au 22/09/2022.|. Stage de 8 semaines dans l’ANSD
+    (Agence Nationale de la Statistique et de la Démographie) de
+    Kaffrine
+    """
+)
+st.write(
+    """
+    - 2021-2022.|. Mémoire : Mise en place d’une plateforme de gestion
+    d’enregistrement des faits d’état civil au Sénégal sous Symfony
     """
 )
