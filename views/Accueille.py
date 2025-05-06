@@ -19,8 +19,9 @@ tel = "(+221)77-694-89-72"
 description = """Ingénieur Data Scientist | Data Analyst | Statisticien"""
 media = {
     "LinkedIn": "https://linkedin.com/in/abdoulaye-ndao-423042253",
-    "Github": "https://github.com/abdoulaye1301",
     "Twitter": "https://x.com/mr_ndao",
+    "E-mail": "ndao1301@gmail.com",
+    "Github": "https://github.com/abdoulaye1301",
 }
 
 
@@ -49,7 +50,12 @@ with col[1]:
     st.write(description)
     st.write("☎️ ", tel)
     st.write("✉️ ", mail)
-
+    st.download_button(
+        label="📄Curriculum vitae",
+        data=pdf,
+        file_name=f"{titre_page}.pdf",
+        mime="Application/octet-stream",
+    )
     # if st.button("📤 Contacter moi"):
     # affiche_formulaire()
     # st.write("")
@@ -63,23 +69,36 @@ st.markdown(
     des outils d'analyse de données, tels que Power BI, Tableau, Excel.
     Ces compétences m'ont permis d'entreprendre divers projets passionnants qui illustrent
     mon engagement envers la science de données et l'utilisation des outils d'analyse de données pour créer des solutions
-    informatiques efficaces.""",
+    informatiques efficaces.
+        <br>
+        <br>""",
     unsafe_allow_html=True,
 )
 
 # Page linkdin
-cols = st.columns(len(media) + 1)
+cols = st.columns(len(media))
 for i, (platforme, lien) in enumerate(media.items()):
     cols[i].write(f"[{platforme}]({lien})")
-with cols[len(media)]:
-    st.download_button(
-        label="📄Curriculum vitae",
-        data=pdf,
-        file_name=f"{titre_page}.pdf",
-        mime="Application/octet-stream",
-    )
-colss = st.columns(4, vertical_alignment="center")
-colss[0].image(linked, width=70)
-colss[1].image(gith, width=70)
-colss[2].image(twitt, width=70)
-colss[len(media)].image(icone_cv, width=80)
+# colss = st.columns(4, vertical_alignment="center")
+# colss[0].image(linked, width=70)
+# colss[1].image(gith, width=70)
+# colss[2].image(twitt, width=70)
+# colss[len(media)].image(icone_cv, width=80)
+linkedin = "https://raw.githubusercontent.com/sahirmaharaj/exifa/main/img/linkedin.gif"
+twitter = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjhueW1qZzYzZ2tmNXU0ZW5ncHppeGd3YXM3ZmJ3NWtsZ3BtaWp5MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rwfMYnhkW9leBRxHqD/giphy.gif"
+email = "https://raw.githubusercontent.com/sahirmaharaj/exifa/main/img/email.gif"
+github = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDg3b2lwZnlseHdwdHcxenJtaDJlcGpod2ZsN2NxMjJiandhN2VlayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/du3J3cXyzhj75IOgvA/giphy.gif"
+
+
+st.caption(
+    f"""
+        <div style='display: flex; align-items: center;'>
+            <a href = 'https://linkedin.com/in/abdoulaye-ndao-423042253'><img src='{linkedin}' style='width: 70px; height: 70   px; margin-right: 110px;'></a>
+            <a href = 'https://x.com/mr_ndao'><img src='{twitter}' style='width: 70px; height: 70px; margin-right: 110px;'></a>
+            <a href = 'mailto:{mail}'><img src='{email}' style='width: 70px; height: 70px; margin-right: 110px;'></a>
+            <a href = 'https://www.kaggle.com/sahirmaharajj'><img src='{github}' style='width: 70px; height: 70px;'></a>
+            
+        </div>
+        """,
+    unsafe_allow_html=True,
+)

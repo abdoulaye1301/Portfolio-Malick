@@ -20,7 +20,7 @@ projet = st.Page(
 )
 skills = st.Page(
     page="views/Skills.py",
-    title="Skills",
+    title="Logiciels",
     icon="",
 )
 # contact = st.Page(page="views/Contacts.py", title="Contacts", icon="")

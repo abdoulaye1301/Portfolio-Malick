@@ -163,10 +163,8 @@ col[0].write(
     """,
     unsafe_allow_html=True,
 )
-col[1].link_button(
-    "Plus info",
-    url="",
-)
+for i in range(4):
+    col[1].write("\n")
 
 # ===============Développement d'application===========================
 
