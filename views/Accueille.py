@@ -56,8 +56,8 @@ with col[1]:
         file_name=f"{titre_page}.pdf",
         mime="Application/octet-stream",
     )
-    # if st.button("📤 Contacter moi"):
-    # affiche_formulaire()
+    if st.button("📤 Contacter moi"):
+        affiche_formulaire()
     # st.write("")
 
 st.write("\n\n")

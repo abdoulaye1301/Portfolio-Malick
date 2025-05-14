@@ -1,11 +1,12 @@
 import streamlit as st
 import requests
+import re
 
-WEBHOOK_URL = "https://formsubmit.co/ndao1301@gmail.com"
+WEBHOOK_URL = "https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTY4MDYzMDA0MzQ1MjY4NTUzZDUxMzQi_pc"
 
 
 def valide_mail(email):
-    email_pattern = r"^[a-zA-z0-9]+@[a-zA-z0-9]+\.[a-zA-z0-9]+$"
+    email_pattern = r"^[a-zA-z0-9_.+-]+@[a-zA-z0-9-]+\.[a-zA-z0-9-.]+$"
     return re.match(email_pattern, email) is not None
 
 
@@ -29,6 +30,12 @@ def contact_form():
                 st.stop()
             if not prenom:
                 st.error("veillez entrer votre prénom", icon="🧏‍♂️")
+                st.stop()
+            if not email:
+                st.error("veillez entrer votre adresse mail", icon="📧")
+                st.stop()
+            if not valide_mail(email):
+                st.error("veillez entrer votre adresse mail valide", icon="📧")
                 st.stop()
             if not message:
                 st.error("veillez entrer votre message", icon="💼")
