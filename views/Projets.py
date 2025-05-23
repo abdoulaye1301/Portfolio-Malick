@@ -92,10 +92,9 @@ col[1].write(
 )
 # ============Projet power BI==============
 
-col[0].write(
-    """<h4 align=left><FONT color="orange">Analyse des ventes</FONT></h4>""",
-    unsafe_allow_html=True,
-)
+# col[0].write(
+##  unsafe_allow_html=True,
+# )
 
 # col[0].write(
 #   """
