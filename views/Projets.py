@@ -168,7 +168,7 @@ for i in range(1):
     col[1].write("\n")
 
 # ===============Développement d'application===========================
-for i in range(3):
+for i in range(2):
     col[0].write("\n")
 col[0].write(
     """<h2 align=right><FONT color="orange">Développement </FONT></h2>""",
