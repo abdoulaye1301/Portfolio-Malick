@@ -97,41 +97,41 @@ col[0].write(
     unsafe_allow_html=True,
 )
 
-col[0].write(
-    """
-    <p style="text-align: justify;"><B>
-    Dans cette étude, l'objectif est de metter en place
-    un tableau de bord pour avoir une vue globale 
-    l'évolution des ventes de ID GLOBA BUSNESS. Pour
-    ce fait nous avons répondu quelques questions qui sont :<br>
-    1- Quelle est la dépence totale effectuée depuis l'instalation de l'entreprise ID GLOBAL BUSNESS ?<br>
-    2- Quelle est la dépence effectuée après l'instalation de l'entreprise ID GLOBAL BUSNESS ?<br>
-    3- Quels sont les produits les plus vendus ?<br>
-    4- Quels sont les produits qui apportent plus de chiffre d'affaire ?<br>
-    5- Quels est le porcentage de ventes par années ?<br>
-    6- Quels sont les produits cosmétiques les plus vendus ?<br>
-    </B></p>
-    """,
-    unsafe_allow_html=True,
-)
-for i in range(3):
-    col[1].write("\n")
-col[1].image("static/Accessoire ID Global.jpg", use_column_width=True)
-col[1].write(
-    """
-    <p style="text-align: justify;"><B>
-    7- Quels sont les produits cosmétiques qui apportent plus de chiffre d'affaire ?<br>
-    8- Quels est le bénéfice totale de l'entreprise ?<br>
-    9- Quels est le bénéfice des produits ?<br>
-    10- Quels est le bénéfice des produits cosmétiques ?<br>
-    </B></p>
-    """,
-    unsafe_allow_html=True,
-)
-col[0].link_button(
-    "Plus info",
-    url="",
-)
+# col[0].write(
+#   """
+#  <p style="text-align: justify;"><B>
+# Dans cette étude, l'objectif est de metter en place
+# un tableau de bord pour avoir une vue globale
+# l'évolution des ventes de ID GLOBA BUSNESS. Pour
+# ce fait nous avons répondu quelques questions qui sont :<br>
+# 1- Quelle est la dépence totale effectuée depuis l'instalation de l'entreprise ID GLOBAL BUSNESS ?<br>
+# 2- Quelle est la dépence effectuée après l'instalation de l'entreprise ID GLOBAL BUSNESS ?<br>
+# 3- Quels sont les produits les plus vendus ?<br>
+# 4- Quels sont les produits qui apportent plus de chiffre d'affaire ?<br>
+# 5- Quels est le porcentage de ventes par années ?<br>
+# 6- Quels sont les produits cosmétiques les plus vendus ?<br>
+# </B></p>
+# """,
+# unsafe_allow_html=True,
+# )
+# for i in range(3):
+#   col[1].write("\n")
+# col[1].image("static/Accessoire ID Global.jpg", use_column_width=True)
+# col[1].write(
+#   """
+#  <p style="text-align: justify;"><B>
+# 7- Quels sont les produits cosmétiques qui apportent plus de chiffre d'affaire ?<br>
+# 8- Quels est le bénéfice totale de l'entreprise ?<br>
+# 9- Quels est le bénéfice des produits ?<br>
+# 10- Quels est le bénéfice des produits cosmétiques ?<br>
+# </B></p>
+# """,
+# unsafe_allow_html=True,
+# )
+# col[0].link_button(
+# "Plus info",
+# url="",
+# )
 
 # =============Projet excel=============
 for i in range(1):
