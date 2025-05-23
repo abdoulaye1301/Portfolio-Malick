@@ -133,8 +133,8 @@ col[1].write(
 # )
 
 # =============Projet excel=============
-# for i in range(1):
-#   col[1].write("\n")
+for i in range(1):
+    col[1].write("\n")
 col[0].write(
     """<h4 align=left><FONT color="orange">Dashboard RNU Excel</FONT></h4>""",
     unsafe_allow_html=True,
@@ -148,20 +148,24 @@ col[1].write(
     une vue globale sur la progression des enquetes au près des ménages pour mener à bien la
     réalisation du projet d'enquete dans le cadre de la mise à jours et extention
     du Registre National Unique (RNU).
+    
+    <p style="text-align: justify;">
+    Ce travail consiste à mettre en place un tableau de bord qui va nous permetre de suivre en temps réel 
+    
     </B></p>
     """,
     unsafe_allow_html=True,
 )
 col[0].image("static/Departement de Kaffine.jpg")
 
-col[0].write(
-    """
-    <p style="text-align: justify;"><B>
-    Ce travail consiste à mettre en place un tableau de bord qui va nous permetre de suivre en temps réel 
-    </B></p>
-    """,
-    unsafe_allow_html=True,
-)
+# col[0].write(
+#   """
+#  <p style="text-align: justify;"><B>
+# Ce travail consiste à mettre en place un tableau de bord qui va nous permetre de suivre en temps réel
+# </B></p>
+# """,
+# unsafe_allow_html=True,
+# )
 for i in range(4):
     col[1].write("\n")
 
