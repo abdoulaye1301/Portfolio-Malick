@@ -52,10 +52,32 @@ col[1].link_button(
     url="https://app.powerbi.com/links/lBwpoWrp9v?ctid=0864d57d-5a5e-4244-8b08-b03f4166a67a&pbi_source=linkShare",
 )
 
-# Projet Intégration de données
+# Tableau de bord ID GLOBAL BUSNESS
 for i in range(3):
     col[1].write("\n")
 col[1].write(
+    """
+  <p style="text-align: justify;"><B>
+ Dans cette étude, l'objectif est de metter en place
+ un tableau de bord pour avoir une vue globale sur
+ l'évolution des ventes de l'ensemble des produit par mois ainsi que la quantités restants.<br>
+ </B></p>
+ """,
+    unsafe_allow_html=True,
+)
+for i in range(1):
+    col[1].write("\n")
+col[0].image("static/Rapport ID GLOBAL BUSNESS.jpg", use_column_width=True)
+
+col[1].link_button(
+    "Plus info",
+    url="https://app.powerbi.com/links/Sn3swo4Wob?ctid=0864d57d-5a5e-4244-8b08-b03f4166a67a&pbi_source=linkShare",
+)
+
+# Projet Intégration de données
+for i in range(1):
+    col[0].write("\n")
+col[0].write(
     """
   <p style="text-align: justify;"><B>
  Dans cette étude, l'objectif est de metter en place
@@ -66,9 +88,9 @@ des Jeux olympiques de chaque été entre 1896 et 2012<br>
  """,
     unsafe_allow_html=True,
 )
-for i in range(1):
-    col[0].write("\n")
-col[0].image("static/Dashbord medailles.jpg", use_column_width=True)
+for i in range(3):
+    col[1].write("\n")
+col[1].image("static/Dashbord medailles.jpg", use_column_width=True)
 
 col[0].link_button(
     "Plus info",
@@ -76,7 +98,7 @@ col[0].link_button(
 )
 # =============Projet excel=============
 
-for i in range(5):
+for i in range(6):
     col[1].write("\n")
 col[0].write(
     """<h4 align=left><FONT color="orange">Dashboard RNU Excel</FONT></h4>""",
