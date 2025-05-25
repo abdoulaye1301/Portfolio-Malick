@@ -137,7 +137,7 @@ for i in range(3):
     col[0].write("\n")
 col[0].image("static/R.png", width=200)
 
-col[0].write(
+col[1].write(
     """<p style="text-align: justify;"><B>R est un langage de 
     programmation et un environnement logiciel principalement 
     utilisé pour l'analyse statistique, la visualisation de 
@@ -145,21 +145,6 @@ col[0].write(
     populaire dans les domaines de la data science, de 
     l’analyse statistique et de l’apprentissage automatique.</B>
     </p>""",
-    unsafe_allow_html=True,
-)
-
-# STATA
-for i in range(2):
-    col[1].write("\n")
-col[1].image("static/stata.jpeg", width=300, use_column_width=False)
-col[1].write(
-    """<p style="text-align: justify;"><B>Stata est un logiciel 
-    de statistiques utilisé pour l'analyse de données, 
-    la gestion de données et la visualisation des données. 
-    Il est couramment utilisé dans les domaines de l'économie, 
-    de la sociologie, de la médecine et de l'épidémiologie, 
-    pour effectuer des analyses statistiques avancées.</B></p>
-    """,
     unsafe_allow_html=True,
 )
 
