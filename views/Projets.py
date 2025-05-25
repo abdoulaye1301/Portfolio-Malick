@@ -211,7 +211,7 @@ col[0].write(
 )
 col[1].image("static/arithmacie.jpg")
 col[1].write("\n")
-col[1].link_button(
-    "Plus info",
-    url="",
-)
+# col[1].link_button(
+#   "Plus info",
+#  url="",
+# )
