@@ -6,12 +6,93 @@ st.markdown(
     pratiques les connaissances acquisent au cours de mon cursus scolaire.</B></p>""",
     unsafe_allow_html=True,
 )
-st.write(
-    """<h2 align=center><FONT color="orange">Modélisation avec Python</FONT></h2>""",
+col = st.columns(2)
+# ===========ANALYSE DE DONNÉES==============
+
+col[0].write(
+    """<h2 align=right><FONT color="orange">Analyse de</FONT></h2>""",
+    unsafe_allow_html=True,
+)
+col[1].write(
+    """<h2 align=left><FONT color="orange">données</FONT></h2>""",
+    unsafe_allow_html=True,
+)
+# ============Projet power BI==============
+
+for i in range(1):
+    col[0].write("\n")
+col[0].write(
+    """<h4 align=left><FONT color="orange">Dashboard avec power BI</FONT></h4>""",
+    unsafe_allow_html=True,
+)
+for i in range(3):
+    col[1].write("\n")
+col[0].write(
+    """
+  <p style="text-align: justify;"><B>
+ Dans cette étude, l'objectif est de metter en place
+ un tableau de bord pour avoir une vue globale sur
+ l'évolution des ventes. Pour
+ ce fait nous avons procédé comme suite :<br>
+ 1- Charger les différents fichiers Excel dans Power BI et appliquer les transformations et les nettoyages que nous trouvons nécessaire pour une meilleure analyse des données.<br>
+ 2- Générer une table de dimension calendrier.<br>
+ 3- Créer des mesures et des graphes que nous trouvons pertinents et réaliser un Dashboard
+ </B></p>
+ """,
+    unsafe_allow_html=True,
+)
+for i in range(2):
+    col[1].write("\n")
+col[1].image("static/Dashbord ventes.jpg", use_column_width=True)
+
+col[1].write(
+    """
+  <p style="text-align: justify;"><B>
+ convivial et dynamique avec des filtres sur les données.<br>
+ </B></p>
+ """,
+    unsafe_allow_html=True,
+)
+# col[0].link_button(
+# "Plus info",
+# url="",
+# )
+
+# =============Projet excel=============
+for i in range(1):
+    col[1].write("\n")
+col[0].write(
+    """<h4 align=left><FONT color="orange">Dashboard RNU Excel</FONT></h4>""",
     unsafe_allow_html=True,
 )
 
-col = st.columns(2)
+col[1].write(
+    """
+    <p style="text-align: justify;"><B>
+    l'évolution des enquetes au près de l'ensemble des ménages des 
+    quatre (4) communes du département de Kaffrine. L'objectif de ce travail est d'avoir 
+    une vue globale sur la progression des enquetes au près des ménages pour mener à bien la
+    réalisation du projet d'enquete dans le cadre de la mise à jours et extention
+    du Registre National Unique (RNU).
+    Ce travail consiste à mettre en place un tableau de bord qui va nous permetre de suivre en temps réel 
+    </B></p>
+    """,
+    unsafe_allow_html=True,
+)
+col[0].image("static/Departement de Kaffine.jpg")
+# Modèélisation des données avec python
+
+for i in range(2):
+    col[0].write("\n")
+col[0].write(
+    """<h2 align=right><FONT color="orange">Modélisation avec</FONT></h2>""",
+    unsafe_allow_html=True,
+)
+col[1].write(
+    """<h2 align=left><FONT color="orange">Python</FONT></h2>""",
+    unsafe_allow_html=True,
+)
+
 # =============Projets Biostatistiques=======================
 
 for i in range(5):
@@ -71,105 +152,13 @@ col[0].write(
     """,
     unsafe_allow_html=True,
 )
-col[1].link_button(
-    "Plus info",
-    url="",
-)
-
-# ========MODELISATION AVEC SPSS=================
-
-
-# ===========ANALYSE DE DONNÉES==============
-for i in range(4):
-    col[0].write("\n")
-col[0].write(
-    """<h2 align=right><FONT color="orange">Analyse de</FONT></h2>""",
-    unsafe_allow_html=True,
-)
-col[1].write(
-    """<h2 align=left><FONT color="orange">données</FONT></h2>""",
-    unsafe_allow_html=True,
-)
-# ============Projet power BI==============
-
-for i in range(1):
-    col[0].write("\n")
-col[0].write(
-    """<h4 align=left><FONT color="orange">Dashboard avec power BI</FONT></h4>""",
-    unsafe_allow_html=True,
-)
-for i in range(3):
-    col[1].write("\n")
-col[0].write(
-    """
-  <p style="text-align: justify;"><B>
- Dans cette étude, l'objectif est de metter en place
- un tableau de bord pour avoir une vue globale sur
- l'évolution des ventes. Pour
- ce fait nous avons procédé comme suite :<br>
- 1- Charger les différents fichiers Excel dans Power BI et appliquer les transformations et les nettoyages que nous trouvons nécessaire pour une meilleure analyse des données.<br>
- 2- Générer une table de dimension calendrier.<br>
- 3- Créer des mesures et des graphes que nous trouvons pertinents et réaliser un Dashboard convivial et dynamique avec des filtres sur les données.<br>
- </B></p>
- """,
-    unsafe_allow_html=True,
-)
-for i in range(3):
-    col[1].write("\n")
-col[1].image("static/Dashbord ventes.jpg", use_column_width=True)
-# col[1].write(
-#   """
-#  <p style="text-align: justify;"><B>
-# 7- Quels sont les produits cosmétiques qui apportent plus de chiffre d'affaire ?<br>
-# 8- Quels est le bénéfice totale de l'entreprise ?<br>
-# 9- Quels est le bénéfice des produits ?<br>
-# 10- Quels est le bénéfice des produits cosmétiques ?<br>
-# </B></p>
-# """,
-# unsafe_allow_html=True,
+# col[1].link_button(
+#   "Plus info",
+#  url="",
 # )
-# col[0].link_button(
-# "Plus info",
-# url="",
-# )
-
-# =============Projet excel=============
-for i in range(1):
-    col[1].write("\n")
-col[0].write(
-    """<h4 align=left><FONT color="orange">Dashboard RNU Excel</FONT></h4>""",
-    unsafe_allow_html=True,
-)
-
-col[1].write(
-    """
-    <p style="text-align: justify;"><B>
-    l'évolution des enquetes au près de l'ensemble des ménages des 
-    quatre (4) communes du département de Kaffrine. L'objectif de ce travail est d'avoir 
-    une vue globale sur la progression des enquetes au près des ménages pour mener à bien la
-    réalisation du projet d'enquete dans le cadre de la mise à jours et extention
-    du Registre National Unique (RNU).
-    Ce travail consiste à mettre en place un tableau de bord qui va nous permetre de suivre en temps réel 
-    
-    </B></p>
-    """,
-    unsafe_allow_html=True,
-)
-col[0].image("static/Departement de Kaffine.jpg")
-
-# col[0].write(
-#   """
-#  <p style="text-align: justify;"><B>
-# Ce travail consiste à mettre en place un tableau de bord qui va nous permetre de suivre en temps réel
-# </B></p>
-# """,
-# unsafe_allow_html=True,
-# )
-for i in range(1):
-    col[1].write("\n")
 
 # ===============Développement d'application===========================
-for i in range(2):
+for i in range(1):
     col[0].write("\n")
 col[0].write(
     """<h2 align=right><FONT color="orange">Développement </FONT></h2>""",
@@ -179,7 +168,7 @@ col[1].write(
     """<h2 align=left><FONT color="orange">d'Application</FONT></h2>""",
     unsafe_allow_html=True,
 )
-for i in range(4):
+for i in range(5):
     col[1].write("\n")
 # ===============Application python===========================
 col[0].write(
