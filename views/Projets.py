@@ -27,6 +27,7 @@ col[0].write(
 )
 for i in range(3):
     col[1].write("\n")
+# Projet power BI M2SID
 col[0].write(
     """
   <p style="text-align: justify;"><B>
@@ -36,7 +37,8 @@ col[0].write(
  ce fait nous avons procédé comme suite :<br>
  1- Charger les différents fichiers Excel dans Power BI et appliquer les transformations et les nettoyages que nous trouvons nécessaire pour une meilleure analyse des données.<br>
  2- Générer une table de dimension calendrier.<br>
- 3- Créer des mesures et des graphes que nous trouvons pertinents et réaliser un Dashboard
+ 3- Créer des mesures et des graphes que nous trouvons pertinents et réaliser un Dashboard 
+ convivial et dynamique avec des filtres sur les données.<br>
  </B></p>
  """,
     unsafe_allow_html=True,
@@ -45,21 +47,36 @@ for i in range(2):
     col[1].write("\n")
 col[1].image("static/Dashbord ventes.jpg", use_column_width=True)
 
+col[1].link_button(
+    "Plus info",
+    url="https://app.powerbi.com/links/lBwpoWrp9v?ctid=0864d57d-5a5e-4244-8b08-b03f4166a67a&pbi_source=linkShare",
+)
+
+# Projet Intégration de données
+for i in range(3):
+    col[1].write("\n")
 col[1].write(
     """
   <p style="text-align: justify;"><B>
- convivial et dynamique avec des filtres sur les données.<br>
+ Dans cette étude, l'objectif est de metter en place
+ un tableau de bord pour avoir une vue globale sur l'évolution des gains de médailles au niveau du jeux Olympique.
+ Pour cela, le jeu de données Summer_Olympic_medallists_1896-2008 est mis à votre disposition. Il fournit les médaillés
+des Jeux olympiques de chaque été entre 1896 et 2012<br>
  </B></p>
  """,
     unsafe_allow_html=True,
 )
-# col[0].link_button(
-# "Plus info",
-# url="",
-# )
-
-# =============Projet excel=============
 for i in range(1):
+    col[0].write("\n")
+col[0].image("static/Dashbord medailles.jpg", use_column_width=True)
+
+col[0].link_button(
+    "Plus info",
+    url="https://app.powerbi.com/links/cCsOthnxzo?ctid=0864d57d-5a5e-4244-8b08-b03f4166a67a&pbi_source=linkShare&bookmarkGuid=e16b0720-399c-4197-9702-4d93f8698eac",
+)
+# =============Projet excel=============
+
+for i in range(5):
     col[1].write("\n")
 col[0].write(
     """<h4 align=left><FONT color="orange">Dashboard RNU Excel</FONT></h4>""",
