@@ -102,10 +102,10 @@ col[0].write(
  Dans cette étude, l'objectif est de metter en place
  un tableau de bord pour avoir une vue globale sur
  l'évolution des ventes. Pour
- ce fait nous avons répondu quelques questions qui sont :<br>
- 1- Charger les différents fichiers Excel dans Power BI et appliquer les transformations et les nettoyages que vous trouverez nécessaire pour une meilleure analyse des données.<br>
- 2- Générer une table de dimension calendrier en utilisant le fichier texte calendrier.<br>
- 3- Créer des mesures et des graphes que vous trouverez pertinents et réaliser un Dashboard convivial et dynamique avec des filtres sur les données.<br>
+ ce fait nous avons procédé comme suite :<br>
+ 1- Charger les différents fichiers Excel dans Power BI et appliquer les transformations et les nettoyages que nous trouvons nécessaire pour une meilleure analyse des données.<br>
+ 2- Générer une table de dimension calendrier.<br>
+ 3- Créer des mesures et des graphes que nous trouvons pertinents et réaliser un Dashboard convivial et dynamique avec des filtres sur les données.<br>
  </B></p>
  """,
     unsafe_allow_html=True,
