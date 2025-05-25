@@ -92,10 +92,14 @@ col[1].write(
 )
 # ============Projet power BI==============
 
+for i in range(1):
+    col[0].write("\n")
 col[0].write(
+    """<h4 align=left><FONT color="orange">Dashboard avec power BI</FONT></h4>""",
     unsafe_allow_html=True,
 )
-
+for i in range(3):
+    col[1].write("\n")
 col[0].write(
     """
   <p style="text-align: justify;"><B>
