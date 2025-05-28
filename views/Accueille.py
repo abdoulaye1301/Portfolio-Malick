@@ -56,9 +56,9 @@ with col[1]:
         file_name=f"{titre_page}.pdf",
         mime="Application/octet-stream",
     )
- ##   if st.button("📤 Contacter moi"):
-   #     affiche_formulaire()
-    # st.write("")
+##   if st.button("📤 Contacter moi"):
+#     affiche_formulaire()
+# st.write("")
 
 st.write("\n\n")
 st.markdown(
@@ -66,7 +66,7 @@ st.markdown(
     Actuellement étudiant en master 2 Statistique et Informatique
     Décisionnelle (SID) à l'Université Alioune Diop de Bambey (UADB).
     Mon parcours académique m'a permis de développer une solide base en science de données et sur les
-    des outils d'analyse de données, tels que Power BI, Tableau, Excel.
+    outils d'analyse de données, tels que Power BI, Tableau et Excel ainsi que la manipulation de données avec python.
     Ces compétences m'ont permis d'entreprendre divers projets passionnants qui illustrent
     mon engagement envers la science de données et l'utilisation des outils d'analyse de données pour créer des solutions
     informatiques efficaces.
