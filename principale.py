@@ -11,17 +11,17 @@ accueil = st.Page(
 competence = st.Page(
     page="views/Qualifications.py",
     title="Qualifications & Expériences",
-    icon="",
+    icon="⭐",
 )
 projet = st.Page(
     page="views/Projets.py",
     title="Projets",
-    icon="",
+    icon="🚀",
 )
 skills = st.Page(
     page="views/Skills.py",
     title="Logiciels",
-    icon="",
+    icon="🧰",
 )
 # contact = st.Page(page="views/Contacts.py", title="Contacts", icon="")
 # Navigation des pages

@@ -1,5 +1,5 @@
 import streamlit as st
-
+import base64
 st.markdown(
     """<p style="text-align: justify;"><B>Dans cette page, vous pouvez consulter 
     les différentes projets sur lesquels j'ai travaillé pour mettre en 
@@ -49,30 +49,52 @@ col[1].image("static/Dashbord ventes.jpg", use_column_width=True)
 
 col[1].link_button(
     "Plus info",
-    url="https://app.powerbi.com/links/lBwpoWrp9v?ctid=0864d57d-5a5e-4244-8b08-b03f4166a67a&pbi_source=linkShare",
+    url="",
 )
 
 # Tableau de bord ID GLOBAL BUSNESS
 for i in range(3):
     col[1].write("\n")
+with open("doc/Curriculum_vitae_Malick_FAYE.pdf", "rb") as pdf_file:
+    pdf = pdf_file.read()
 col[1].write(
     """
   <p style="text-align: justify;"><B>
- Dans cette étude, l'objectif est de metter en place
- un tableau de bord pour avoir une vue globale sur
- l'évolution des ventes de l'ensemble des produit par mois ainsi que la quantités restants.<br>
+  interprétation peut conduire à des décisions erronées.<br><br>
+    L'objectif de ce document est de présenter les concepts fondamentaux du traitement de données, 
+    les méthodes couramment utilisées et les outils disponibles pour faciliter ce processus. Une base 
+    issue de l’ANSD (Agence Nationale de la Statistique et de la Démographie) 
+    sera utilisée dans ce travail pour montrer les différentes étapes du traitement de donnée.<br>
  </B></p>
  """,
     unsafe_allow_html=True,
 )
 for i in range(1):
     col[1].write("\n")
-col[0].image("static/Rapport ID GLOBAL BUSNESS.jpg", use_column_width=True)
-
-col[1].link_button(
-    "Plus info",
-    url="https://app.powerbi.com/links/Sn3swo4Wob?ctid=0864d57d-5a5e-4244-8b08-b03f4166a67a&pbi_source=linkShare",
+col[0].write(
+    """
+  <p style="text-align: justify;"><B>
+ Dans un monde où les données sont produites en quantité exponentielle, leur traitement efficace est devenu 
+ un enjeu majeur pour les entreprises, les chercheurs et les institutions. Le traitement de données consiste 
+ à collecter, organiser, analyser et interpréter des informations brutes afin de les transformer en connaissances 
+ exploitables. Le processus de traitement de données comprend plusieurs étapes clés : la collecte, le nettoyage, 
+ l'analyse et la visualisation. Chacune de ces étapes joue un rôle crucial dans la garantie de la qualité et de 
+ la pertinence des résultats obtenus. Par exemple, des données mal nettoyées 
+ peuvent fausser les analyses, tandis qu'une mauvaise<br>
+ </B></p>
+ """,
+    unsafe_allow_html=True,
 )
+pdf_path = "doc/Curriculum_vitae_Malick_FAYE.pdf"
+# Lecture du PDF
+if col[1].button("Plus info", key="download_report"):
+    with open(pdf_path, "rb") as f:
+        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+
+    # Affichage dans Streamlit via iframe
+    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="1000" type="application/pdf"></iframe>'
+    st.markdown(pdf_display, unsafe_allow_html=True)
+
 
 # Projet Intégration de données
 for i in range(1):

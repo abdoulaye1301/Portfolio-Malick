@@ -7,20 +7,20 @@ from views.Contacts import contact_form
 # les chemins des fichienrs
 dire = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 fichier_css = dire / "fichier.css"
-cv = "doc/cv_abdoulaye_ndao.pdf"
+cv = "doc/Curriculum_vitae_Malick_FAYE.pdf"
 icone_page = "static/Plan de travail 1.png"
 linked = "static/linkedin.png"
 gith = "static/github.png"
 twitt = "static/twitter.png"
 icone_cv = "static/cv.png"
-titre_page = "Abdoulaye NDAO"
-mail = "ndao1301@gmail.com"
-tel = "(+221)77-694-89-72"
-description = """Ingénieur Data Scientist | Data Analyst | Statisticien"""
+titre_page = "Malick FAYE"
+mail = "malickfaye66805@gmail.com"
+tel = "07 59 05 98 50"
+description = """ Data Scientist | Data Analyst | BI"""
 media = {
-    "LinkedIn": "https://linkedin.com/in/abdoulaye-ndao-423042253",
+    "LinkedIn": "https://www.linkedin.com/in/malick-faye-594829259/",
     "Twitter": "https://x.com/mr_ndao",
-    "E-mail": "ndao1301@gmail.com",
+    "E-mail": "malickfaye66805@gmail.com",
     "Github": "https://github.com/abdoulaye1301",
 }
 
@@ -63,13 +63,12 @@ with col[1]:
 st.write("\n\n")
 st.markdown(
     """<p style="text-align: justify;"><B>
-    Actuellement étudiant en master 2 Statistique et Informatique
-    Décisionnelle (SID) à l'Université Alioune Diop de Bambey (UADB).
-    Mon parcours académique m'a permis de développer une solide base en science de données et sur les
-    outils d'analyse de données, tels que Power BI, Tableau et Excel ainsi que la manipulation de données avec python.
-    Ces compétences m'ont permis d'entreprendre divers projets passionnants qui illustrent
-    mon engagement envers la science de données et l'utilisation des outils d'analyse de données pour créer des solutions
-    informatiques efficaces.
+    Étudiant en Master 2 Ingénierie Mathématique pour la Science des Données à 
+    l'Université de Lorraine, je recherche un stage de fin d'études à partir du 
+    mois d'Avril dans les domaines de la data science, l'analyse de données ou l'ingénierie 
+    des données. Fort d'une expérience en statistique publique et maitrise des outils 
+    modernes d'analyse, je souhaite contribuer à des projets innovants de valorisation 
+    des données.
         <br>
         <br>""",
     unsafe_allow_html=True,
