@@ -19,9 +19,9 @@ tel = "07 59 05 98 50"
 description = """ Data Scientist | Data Analyst | BI"""
 media = {
     "LinkedIn": "https://www.linkedin.com/in/malick-faye-594829259/",
-    "Twitter": "https://x.com/mr_ndao",
+    "Twitter": "https://twitter.com/MalickFaye11",
     "E-mail": "malickfaye66805@gmail.com",
-    "Github": "https://github.com/abdoulaye1301",
+    "Github": "https://github.com/Malick668",
 }
 
 
@@ -92,10 +92,10 @@ github = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDg3b2lwZnlseHdwdHcx
 st.caption(
     f"""
         <div style='display: flex; align-items: center;'>
-            <a href = 'https://linkedin.com/in/abdoulaye-ndao-423042253'><img src='{linkedin}' style='width: 70px; height: 70   px; margin-right: 110px;'></a>
-            <a href = 'https://x.com/mr_ndao'><img src='{twitter}' style='width: 70px; height: 70px; margin-right: 110px;'></a>
+            <a href = 'https://www.linkedin.com/in/malick-faye-594829259/'><img src='{linkedin}' style='width: 70px; height: 70   px; margin-right: 110px;'></a>
+            <a href = ''><img src='{twitter}' style='width: 70px; height: 70px; margin-right: 110px;'></a>
             <a href = 'mailto:{mail}'><img src='{email}' style='width: 70px; height: 70px; margin-right: 110px;'></a>
-            <a href = 'https://www.kaggle.com/sahirmaharajj'><img src='{github}' style='width: 70px; height: 70px;'></a>
+            <a href = 'https://github.com/Malick668'><img src='{github}' style='width: 70px; height: 70px;'></a>
             
         </div>
         """,
