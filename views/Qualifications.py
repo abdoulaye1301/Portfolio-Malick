@@ -40,7 +40,7 @@ st.write(
         - Dresser un bilan de la collecte (tableau récapitulatif, etc ) dans ma zone de contrôle
     """
 )
-st.subheader("Stage en Data Analyst", anchor=False)
+st.subheader("Stage en Statistique", anchor=False)
 st.write(
     """
     \n

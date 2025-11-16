@@ -63,12 +63,13 @@ with col[1]:
 st.write("\n\n")
 st.markdown(
     """<p style="text-align: justify;"><B>
-    Étudiant en Master 2 Ingénierie Mathématique pour la Science des Données à 
-    l'Université de Lorraine, je recherche un stage de fin d'études à partir du 
-    mois d'Avril dans les domaines de la data science, l'analyse de données ou l'ingénierie 
-    des données. Fort d'une expérience en statistique publique et maitrise des outils 
-    modernes d'analyse, je souhaite contribuer à des projets innovants de valorisation 
-    des données.
+    Etudiant en master 2 en Ingénierie Mathématique pour la science des
+    Données, je suis à la recherche d’un stage en Data Analyst dan s le but de
+    contribuer à la création de valeur dans les entreprises via l’ exploitation des
+    données J’ai une parfaite ma î trise des technique s de programmation (sur
+    Python, MySQL , JavaScript, Oracle, etc ..) et des méthodes
+    statistiques avancées ; ce qui est indispensable pour le poste de Data
+    Analyst
         <br>
         <br>""",
     unsafe_allow_html=True,
